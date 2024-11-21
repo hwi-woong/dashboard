@@ -72,3 +72,19 @@ progress {
   height: 20px;
   border-radius: 5px;
 }
+/* Dashboard.css */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.footer-card {
+  animation: pulse 1.5s infinite; /* 애니메이션 적용 */
+}

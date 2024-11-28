@@ -1,0 +1,90 @@
+.dashboard {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  margin: 20px 0;
+}
+
+.menu button {
+  margin-right: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.menu button.active {
+  background-color: #6200ea;
+  color: white;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.dashboard-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.db-connection progress {
+  width: 100%;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.footer-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  margin-top: 20px;
+}
+
+progress {
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+}
+/* Dashboard.css */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.footer-card {
+  animation: pulse 1.5s infinite; /* 애니메이션 적용 */
+}

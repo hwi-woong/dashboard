@@ -17,11 +17,14 @@ const SidebarMenu = () => {
           <p>System Admin</p>
         </div>
       </div>
+      <div className="dashboard">
+        <span className="dashboard-text">Dashboard</span>
+      </div>
       <ul className="menu-list">
         <li className={`menu-item ${!isOpen ? 'hidden' : ''}`}>SMS</li>
         <li className={`menu-item ${!isOpen ? 'hidden' : ''}`}>RCS</li>
         <li className={`menu-item ${!isOpen ? 'hidden' : ''}`}>
-          <img src="icon.png" alt="알림톡" /> 알림톡
+          <img src="icon.png" alt="알림톡" className="menu-icon" /> 알림톡
         </li>
         <li className={`menu-item ${!isOpen ? 'hidden' : ''}`}>MMS</li>
       </ul>

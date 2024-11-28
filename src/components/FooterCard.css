@@ -1,0 +1,68 @@
+.footer-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.success-rates {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.channel {
+    text-align: center;
+}
+
+.label {
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.sms {
+    background-color: #007bff;
+    /* SMS 색상 */
+}
+
+.rcs {
+    background-color: #0056b3;
+    /* RCS 색상 */
+}
+
+.alert {
+    background-color: #ffc107;
+    /* 알림톡 색상 */
+}
+
+.mms {
+    background-color: #6c757d;
+    /* MMS 색상 */
+}
+
+.percentage {
+    display: block;
+    margin-top: 5px;
+}
+
+.response-time {
+    margin-top: 15px;
+}
+
+.progress-bar {
+    background: #e9ecef;
+    border-radius: 5px;
+    height: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.progress {
+    background: #28a745;
+    /* 응답 시간 진행 바 색상 */
+    height: 100%;
+}

@@ -1,25 +1,19 @@
-import React, { useState } from 'react';
-import Dashboard from './Dashboard';
-import SidebarMenu from './SidebarMenu';
-import Header from './Header'; // Header 컴포넌트 임포트
-import './App.css';
+import React from "react";
+import Sidebar from "./components/Sidebar";
+import Dashboard from "./components/Dashboard";
+import Header from "./Header";
+import "./App.css"; // 전체 스타일
 
-const App = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
+function App() {
   return (
-    <div className="app">
-      <Header onToggleMenu={toggleMenu} /> {/* Header 추가 */}
-      <div className="app-content">
-        {isMenuOpen && <SidebarMenu />}
+    <div className="App">
+      <Sidebar />
+      <Header /> 
+      <main className="main-content">
         <Dashboard />
-      </div>
+      </main>
     </div>
   );
-};
+}
 
 export default App;

@@ -1,0 +1,24 @@
+.notice-section {
+    background-color: #fff3cd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ffeeba;
+}
+
+.notice-section strong {
+    font-size: 1.2em;
+}
+
+.more-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.more-button:hover {
+    background-color: #0056b3;
+}

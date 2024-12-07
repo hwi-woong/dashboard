@@ -1,0 +1,34 @@
+.notice-section {
+  background-color: #f5e9da;
+  padding: 10px;
+  border-radius: 5px;
+  border-left: 4px solid #d17b3e;
+  font-size: 14px;
+  color: #4f4f4f;
+  margin-bottom: 20px;
+  /* 대시보드와의 간격 */
+}
+
+.notice-section strong {
+  color: #d17b3e;
+}
+
+.notice-section ul {
+  margin: 5px 0 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.more-button {
+  background-color: #4daaff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.more-button:hover {
+  background-color: #3a8bc1;
+}

@@ -1,28 +1,10 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
 .app {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-  
-  .app-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f0f0f0;
-  }
-  
-  .app-content {
-    display: flex;
-    flex-grow: 1; /* 나머지 공간을 차지하도록 설정 */
-  }
-  
-  .user-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .user-info button {
-    margin-left: 10px;
-  }
-  
+  padding: 20px;
+}

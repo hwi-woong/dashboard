@@ -1,44 +1,57 @@
 .sidebar {
-    width: 200px;
-    background-color: #f9f9f9;
-    border-right: 1px solid #e0e0e0;
-    transition: width 0.3s;
-    overflow: hidden;
-  }
-  
-  .sidebar.open {
-    width: 200px; /* 메뉴가 열릴 때 */
-  }
-  
-  .user-info {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    cursor: pointer;
-  }
-  
-  .user-avatar {
-    margin-right: 10px;
-    font-size: 24px;
-  }
-  
-  .menu-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .menu-item {
-    padding: 15px;
-    cursor: pointer;
-  }
-  
-  .menu-item.hidden {
-    display: none; /* 메뉴가 닫힐 때 */
-  }
-  
-  .menu-item img {
-    width: 20px; /* 아이콘 크기 조정 */
-    margin-right: 10px;
-  }
-  
+  width: 250px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  transition: width 0.3s;
+}
+
+.sidebar.open {
+  width: 250px;
+  /* 사이드바가 열릴 때의 너비 */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-avatar {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.user-name h3 {
+  margin: 0;
+}
+
+.user-name p {
+  margin: 0;
+  color: #888;
+}
+
+.dashboard {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+}
+
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-item {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  margin-right: 8px;
+}
+
+.hidden {
+  display: none;
+}

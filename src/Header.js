@@ -1,18 +1,18 @@
 import React from 'react';
 import './Header.css';
 
-const Header = ({ onToggleMenu }) => {
+const Header = () => {
   return (
-    <header className="app-header">
-      <button onClick={onToggleMenu}>
-        {onToggleMenu ? 'Hide Menu' : 'Show Menu'}
-      </button>
-      <h1>Messaging Dashboard</h1>
-      <div className="user-info">
-        <button className="settings-button">Settings</button>
-        <button className="logout-button">Logout</button>
-        <div className="notification-icon">🔔</div>
-        <div className="help-icon">❓</div>
+    <header className="dashboard-header">
+    <div className="header-title">
+      <i className="icon-dashboard" /> {/* 아이콘을 위한 공간 */}
+      <span>Dashboard</span>
+
+      </div>
+      <div className="header-actions">
+        <button className="header-button settings">Settings</button>
+        <button className="header-button logout">Logout</button>
+        <button className="header-button help">?</button>
       </div>
     </header>
   );

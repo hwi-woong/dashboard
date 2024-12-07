@@ -4,12 +4,10 @@ import './Header.css';
 const Header = () => {
   return (
     <header className="dashboard-header">
-      <div className="notice-section">
-        <strong>※공지사항</strong>
-        <ul>
-          <li>현재 UMS 서비스 장애가 발생하고 있습니다. 신속히 처리하겠습니다.</li>
-          <li>SMS 발송 건수가 하루 최대를 초과했습니다.</li>
-        </ul>
+    <div className="header-title">
+      <i className="icon-dashboard" /> {/* 아이콘을 위한 공간 */}
+      <span>Dashboard</span>
+
       </div>
       <div className="header-actions">
         <button className="header-button settings">Settings</button>

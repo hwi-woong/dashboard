@@ -1,0 +1,10 @@
+.total-message-status {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.total-message-status h3 {
+    margin: 0 0 10px;
+}

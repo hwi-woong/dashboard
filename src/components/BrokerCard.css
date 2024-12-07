@@ -1,0 +1,15 @@
+.broker-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.broker-card h4 {
+    margin: 0 0 10px;
+}
+
+.broker-card p {
+    margin: 5px 0;
+}

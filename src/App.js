@@ -1,5 +1,5 @@
 import React from "react";
-import Sidebar from "./components/Sidebar";
+//import Sidebar from "./components/Sidebar";
 import Dashboard from "./components/Dashboard";
 import Header from "./Header";
 import "./App.css"; // 전체 스타일
@@ -7,7 +7,7 @@ import "./App.css"; // 전체 스타일
 function App() {
   return (
     <div className="App">
-      <Sidebar />
+      
       <Header /> 
       <main className="main-content">
         <Dashboard />

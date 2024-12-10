@@ -1,34 +1,40 @@
-.notice-section {
-  background-color: #f5e9da;
-  padding: 10px;
-  border-radius: 5px;
-  border-left: 4px solid #d17b3e;
-  font-size: 14px;
-  color: #4f4f4f;
-  margin-bottom: 20px;
-  /* 대시보드와의 간격 */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
 }
 
-.notice-section strong {
-  color: #d17b3e;
+.dashboard-top,
+.dashboard-middle,
+.dashboard-bottom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-.notice-section ul {
-  margin: 5px 0 0;
-  padding-left: 20px;
-  list-style-type: disc;
+.status-card,
+.broker-card,
+.message-list,
+.graph-section {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background: #fff;
 }
 
-.more-button {
-  background-color: #4daaff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-  cursor: pointer;
-  margin-top: 10px;
+.trend.up {
+  color: green;
 }
 
-.more-button:hover {
-  background-color: #3a8bc1;
+.trend.down {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+.failure {
+  color: red;
 }

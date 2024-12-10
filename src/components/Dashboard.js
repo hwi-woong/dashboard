@@ -1,59 +1,73 @@
 import React from 'react';
-import Notice from './Notice';
 import StatusCard from './StatusCard';
 import BrokerCard from './BrokerCard';
-import TotalMessageStatus from './TotalMessageStatus';
-import MessageSuccessRate from './MessageSuccessRate';
-import './Dashboard.css'; // 스타일을 추가합니다.
+import MessageList from './MessageList';
+import GraphSection from './GraphSection';
+import './Dashboard.css';
 
 const Dashboard = () => {
-  // 데이터 및 상태 정의
-  const totalMessageData = {
-    labels: ['접수', '분배', '발송'],
+  const statusData = [
+    {
+      title: '접수 현황',
+      data1: { label: '접수', value: '100건' },
+      data2: { label: '분배', value: '99건' },
+      trend1: 9,
+      trend2: -8,
+    },
+    {
+      title: '접수 데이터 반출 현황',
+      data1: { label: '', value: '98%' },
+      data2: { label: '', value: '' },
+      trend1: 0,
+      trend2: 0,
+    },
+  ];
+
+  const brokers = [
+    { name: 'A중계사', speed: 63.1, average: 60.8, trend: '↑' },
+    { name: 'B중계사', speed: 50.1, average: 60.8, trend: '↓' },
+  ];
+
+  const messages = [
+    { type: '알림톡', time: '11:00', phone: '01012341234', success: true },
+    { type: 'RCS', time: '11:00', phone: '01012341234', success: false },
+  ];
+
+  const graphData = {
+    labels: ['10:00', '11:00', '12:00', '13:00', '14:00'],
     datasets: [
       {
-        label: '전체 메시지 발송 현황',
-        data: [80, 70, 90],
-        backgroundColor: ['#4caf50', '#ff9800', '#f44336'],
+        label: '접수',
+        data: [1200, 1100, 1000, 950, 900],
+        borderColor: 'rgba(75, 192, 192, 1)',
+        backgroundColor: 'rgba(75, 192, 192, 0.2)', // 필요시 배경색 추가
+        fill: true,
+      },
+      {
+        label: '발송',
+        data: [1100, 1000, 950, 900, 850],
+        borderColor: 'rgba(153, 102, 255, 1)',
+        backgroundColor: 'rgba(153, 102, 255, 0.2)', // 필요시 배경색 추가
+        fill: true,
       },
     ],
   };
-
-  const successRateData = {
-    labels: ['11:00', '12:00', '13:00', '14:00', '15:00'],
-    datasets: [
-      {
-        label: 'RCS',
-        data: [80, 75, 85, 90, 88],
-        borderColor: 'rgba(255, 99, 132, 1)',
-        fill: false,
-      },
-      {
-        label: 'SMS',
-        data: [60, 65, 70, 75, 80],
-        borderColor: 'rgba(54, 162, 235, 1)',
-        fill: false,
-      },
-      {
-        label: '알림톡',
-        data: [50, 55, 60, 65, 70],
-        borderColor: 'rgba(255, 206, 86, 1)',
-        fill: false,
-      },
-    ],
-  };
-
+  
   return (
     <div className="dashboard">
-      <Notice />
-      <div className="dashboard-grid">
-        <StatusCard title="접수 현황" percentage={50} icon="https://via.placeholder.com/100" />
-        <StatusCard title="접수 데이터 반출 현황" percentage={80} icon="https://via.placeholder.com/100" />
-        <BrokerCard name="A 중계사" speed={63.1} average={60.8} trend="↑" />
-        <BrokerCard name="B 중계사" speed={50.1} average={60.8} trend="↓" />
-        <BrokerCard name="C 중계사" speed={53.1} average={60.8} trend="↓" />
-        <TotalMessageStatus data={totalMessageData} />
-        <MessageSuccessRate data={successRateData} />
+      <div className="dashboard-top">
+        {statusData.map((status, index) => (
+          <StatusCard key={index} {...status} />
+        ))}
+      </div>
+      <div className="dashboard-middle">
+        {brokers.map((broker, index) => (
+          <BrokerCard key={index} {...broker} />
+        ))}
+        <MessageList title="최근 접수 메시지" messages={messages} />
+      </div>
+      <div className="dashboard-bottom">
+        <GraphSection title="전체 메시지 발송 현황" data={graphData} />
       </div>
     </div>
   );

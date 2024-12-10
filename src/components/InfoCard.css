@@ -1,7 +1,52 @@
 .info-card {
-    background: #f8f8f8;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+  }
+  
+  .info-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+  
+  .info-card-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+  }
+  
+  .info-card-title {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  
+  .info-card-value {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 8px 0;
+  }
+  
+  .info-card-description {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .info-card-trend {
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  
+  .info-card-trend.up {
+    color: #4caf50;
+  }
+  
+  .info-card-trend.down {
+    color: #f44336;
+  }
+  

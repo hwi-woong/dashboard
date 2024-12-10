@@ -1,0 +1,10 @@
+.message-success-rate {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.message-success-rate h3 {
+    margin: 0 0 10px;
+}

@@ -15,4 +15,5 @@ const GraphSection = ({ title, data }) => {
   );
 };
 
+
 export default GraphSection;

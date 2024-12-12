@@ -1,0 +1,13 @@
+.message-graph {
+    flex: 1;
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .message-graph h4 {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  

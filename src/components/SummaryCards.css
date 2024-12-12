@@ -1,0 +1,29 @@
+.summary-cards {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .summary-card {
+    background: #e3f2fd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .summary-card h4 {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2196f3;
+  }
+  
+  .trend {
+    font-size: 14px;
+    color: #777;
+  }
+  

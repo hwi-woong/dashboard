@@ -1,0 +1,41 @@
+.overall-message-status {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .status-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .status-item .circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .green {
+    background-color: #4caf50;
+  }
+  
+  .orange {
+    background-color: #ff9800;
+  }
+  
+  .status-arrow .line {
+    width: 50px;
+    height: 10px;
+    background-color: #4caf50;
+  }
+  
+  .status-arrow .line.orange {
+    background-color: #ff9800;
+  }
+  
